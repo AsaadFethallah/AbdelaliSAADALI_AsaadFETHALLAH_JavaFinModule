@@ -1,0 +1,858 @@
+/* Global styles */
+.root {
+    font-family: "Arial", sans-serif; /* Standard CSS property */
+    -fx-font-family: "Arial", sans-serif; /* JavaFX-specific property */
+    -fx-background-color: #f9f9f9; /* JavaFX-specific property */
+    background-color: #f9f9f9; /* Standard CSS property */
+}
+
+/* Header */
+.header {
+    font-size: 24px; /* Standard CSS property */
+    -fx-font-size: 24px; /* JavaFX-specific property */
+    font-weight: bold; /* Standard CSS property */
+    -fx-font-weight: bold; /* JavaFX-specific property */
+    -fx-padding: 20px; /* JavaFX-specific property */
+    padding: 20px; /* Standard CSS property */
+    -fx-background-color: #4CAF50; /* JavaFX-specific property */
+    background-color: #4CAF50; /* Standard CSS property */
+    -fx-text-fill: #333; /* JavaFX-specific property */
+    color: #333; /* Standard CSS property */
+    -fx-text-alignment: center; /* JavaFX-specific property */
+    text-align: center; /* Standard CSS property */
+    -fx-border-color: #dcdcdc; /* JavaFX-specific property */
+    border-color: #dcdcdc; /* Standard CSS property */
+    -fx-border-width: 1; /* JavaFX-specific property */
+    border-width: 1px; /* Standard CSS property */
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: #ffffff; /* JavaFX-specific property */
+    background-color: #ffffff; /* Standard CSS property */
+    -fx-border-color: #dcdcdc; /* JavaFX-specific property */
+    border-color: #dcdcdc; /* Standard CSS property */
+    -fx-border-width: 1; /* JavaFX-specific property */
+    border-width: 1px; /* Standard CSS property */
+}
+
+/* Table Column */
+.table-column {
+    -fx-text-fill: #333; /* JavaFX-specific property */
+    color: #333; /* Standard CSS property */
+    font-weight: bold; /* Standard CSS property */
+}
+
+/* Table Row */
+.table-row-cell {
+    -fx-border-color: #f1f1f1; /* JavaFX-specific property */
+    border-color: #f1f1f1; /* Standard CSS property */
+    -fx-border-width: 0 0 1 0; /* JavaFX-specific property */
+    border-width: 0 0 1px 0; /* Standard CSS property */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9; /* JavaFX-specific property */
+    background-color: #f9f9f9; /* Standard CSS property */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff; /* JavaFX-specific property */
+    background-color: #ffffff; /* Standard CSS property */
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #4CAF50; /* JavaFX-specific property */
+    background-color: #4CAF50; /* Standard CSS property */
+    -fx-text-fill: white; /* JavaFX-specific property */
+    color: white; /* Standard CSS property */
+    -fx-font-size: 14px; /* JavaFX-specific property */
+    font-size: 14px; /* Standard CSS property */
+    -fx-font-weight: bold; /* JavaFX-specific property */
+    font-weight: bold; /* Standard CSS property */
+    -fx-padding: 10px 20px; /* JavaFX-specific property */
+    padding: 10px 20px; /* Standard CSS property */
+    -fx-border-radius: 5px; /* JavaFX-specific property */
+    border-radius: 5px; /* Standard CSS property */
+    -fx-cursor: hand; /* JavaFX-specific property */
+    cursor: pointer; /* Standard CSS property */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* JavaFX-specific property */
+    background-color: #45a049; /* Standard CSS property */
+}
+
+.btn-primary {
+    -fx-background-color: #2196F3; /* JavaFX-specific property */
+    background-color: #2196F3; /* Standard CSS property */
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1976D2; /* JavaFX-specific property */
+    background-color: #1976D2; /* Standard CSS property */
+}
+
+.btn-secondary {
+    -fx-background-color: #9E9E9E; /* JavaFX-specific property */
+    background-color: #9E9E9E; /* Standard CSS property */
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #757575; /* JavaFX-specific property */
+    background-color: #757575; /* Standard CSS property */
+}
+
+/* HBox for bottom buttons */
+.hbox {
+    -fx-spacing: 20px; /* JavaFX-specific property */
+    -fx-padding: 20px; /* JavaFX-specific property */
+    padding: 20px; /* Standard CSS property */
+    -fx-alignment: center; /* JavaFX-specific property */
+}
+
+/* Alert Dialog */
+.alert-dialog {
+    -fx-font-family: "Arial", sans-serif; /* JavaFX-specific property */
+    font-family: "Arial", sans-serif; /* Standard CSS property */
+    -fx-font-size: 14px; /* JavaFX-specific property */
+    font-size: 14px; /* Standard CSS property */
+    -fx-background-color: #ffffff; /* JavaFX-specific property */
+    background-color: #ffffff; /* Standard CSS property */
+    -fx-border-radius: 10px; /* JavaFX-specific property */
+    border-radius: 10px; /* Standard CSS property */
+    -fx-padding: 15px; /* JavaFX-specific property */
+    padding: 15px; /* Standard CSS property */
+    -fx-max-width: 400px; /* JavaFX-specific property */
+    max-width: 400px; /* Standard CSS property */
+}
+
+.alert-header {
+    -fx-font-weight: bold; /* JavaFX-specific property */
+    font-weight: bold; /* Standard CSS property */
+    -fx-font-size: 18px; /* JavaFX-specific property */
+    font-size: 18px; /* Standard CSS property */
+    -fx-text-fill: #4CAF50; /* JavaFX-specific property */
+    color: #4CAF50; /* Standard CSS property */
+}
+
+.alert-description {
+    -fx-font-size: 16px; /* JavaFX-specific property */
+    font-size: 16px; /* Standard CSS property */
+    -fx-text-fill: #555; /* JavaFX-specific property */
+    color: #555; /* Standard CSS property */
+    -fx-padding: 10px 0; /* JavaFX-specific property */
+    padding: 10px 0; /* Standard CSS property */
+}
+
+.alert-severity {
+    -fx-font-weight: bold; /* JavaFX-specific property */
+    font-weight: bold; /* Standard CSS property */
+    -fx-font-size: 16px; /* JavaFX-specific property */
+    font-size: 16px; /* Standard CSS property */
+    -fx-text-fill: #FF5722; /* JavaFX-specific property */
+    color: #FF5722; /* Standard CSS property */
+}
+
+/* Alert TableView */
+.alert-table {
+    -fx-font-size: 14px; /* JavaFX-specific property */
+    font-size: 14px; /* Standard CSS property */
+    -fx-border-color: #ddd; /* JavaFX-specific property */
+    border-color: #ddd; /* Standard CSS property */
+    -fx-border-width: 1; /* JavaFX-specific property */
+    border-width: 1px; /* Standard CSS property */
+}
+
+/* Alert Table Column */
+.alert-table-column {
+    -fx-font-weight: bold; /* JavaFX-specific property */
+    font-weight: bold; /* Standard CSS property */
+    -fx-text-fill: #333; /* JavaFX-specific property */
+    color: #333; /* Standard CSS property */
+}
+
+/* Light Mode */
+.dashboard {
+    -fx-background-color: #f5f6fa;
+}
+
+.header-container {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.controls-container {
+    -fx-background-color: transparent;
+}
+
+.label-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4px;
+    -fx-padding: 5 10;
+}
+
+.text-field:focused {
+    -fx-border-color: #3498db;
+}
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4px;
+}
+
+.combo-box:hover {
+    -fx-border-color: #3498db;
+}
+
+.content-container {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+}
+
+.split-pane-divider {
+    -fx-background-color: #dcdde1;
+    -fx-padding: 0 1px 0 1px;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.packet-table {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4px;
+}
+
+.packet-table .column-header {
+    -fx-background-color: #f8f9fa;
+    -fx-font-weight: bold;
+}
+
+.packet-table .table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.packet-table .table-row-cell:selected {
+    -fx-background-color: #3498db30;
+}
+
+.chart-container {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4px;
+}
+
+.packet-chart {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.packet-chart .chart-series-line {
+    -fx-stroke: #3498db;
+    -fx-stroke-width: 2px;
+}
+
+.packet-chart .default-color0.chart-series-line {
+    -fx-stroke: #3498db;
+}
+
+.packet-chart .default-color0.chart-line-symbol {
+    -fx-background-color: #3498db, white;
+}
+
+.packet-chart .chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.packet-chart .chart-legend-item-symbol {
+    -fx-background-radius: 0;
+    -fx-padding: 4px;
+    -fx-background-color: #3498db;
+}
+
+.packet-chart .chart-legend-item {
+    -fx-padding: 5px;
+    -fx-text-fill: #2c3e50;
+}
+
+.packet-chart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.packet-chart .chart-vertical-grid-lines {
+    -fx-stroke: #dcdde180;
+}
+
+.packet-chart .chart-horizontal-grid-lines {
+    -fx-stroke: #dcdde180;
+}
+
+.stats-container {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4px;
+}
+
+.stats-box {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4px;
+}
+
+.stats-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #7f8c8d;
+}
+
+.stats-value {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.footer-container {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, -2);
+}
+
+.button {
+    -fx-padding: 8 16;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+    -fx-min-width: 120px;
+}
+
+.btn-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2980b9;
+}
+
+.btn-secondary {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+.btn-success {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+}
+
+.btn-success:hover {
+    -fx-background-color: #27ae60;
+}
+
+.btn-danger {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: white;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #7f8c8d;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #2c3e50;
+}
+
+/* Dark Mode */
+.dashboard.dark-mode {
+    -fx-background-color: #1a1a1a;
+}
+
+.dark-mode .header-container,
+.dark-mode .footer-container,
+.dark-mode .chart-container,
+.dark-mode .stats-container {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark-mode .header-title,
+.dark-mode .section-title,
+.dark-mode .table-view .table-cell,
+.dark-mode .combo-box-base,
+.dark-mode .combo-box .list-cell {
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .label-text,
+.dark-mode .table-column {
+    -fx-text-fill: #bdc3c7;
+}
+
+.dark-mode .text-field,
+.dark-mode .combo-box {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #4d4d4d;
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .packet-table {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #4d4d4d;
+}
+
+.dark-mode .packet-table .column-header {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .packet-table .column-header .label {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+}
+
+.dark-mode .packet-table .column-header-background {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .packet-table .filler {
+    -fx-background-color: #3d3d3d;
+}
+
+.packet-table .column-header,
+.packet-table .column-header .label {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 8 10;
+}
+
+.packet-table .table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.packet-table .table-column {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 10;
+}
+
+.dark-mode .packet-table .table-row-cell {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .packet-table .table-row-cell:odd {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .packet-table .table-row-cell:selected {
+    -fx-background-color: #3498db40;
+}
+
+.dark-mode .stats-box {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #4d4d4d;
+    -fx-padding: 15px;
+}
+
+.dark-mode .stats-label {
+    -fx-text-fill: #bdc3c7;
+    -fx-font-size: 14px;
+}
+
+.dark-mode .stats-value {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Chart improvements */
+.chart-container {
+    -fx-padding: 10px;
+    -fx-min-height: 400px;
+}
+
+.packet-chart {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.dark-mode .chart-plot-background {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark-mode .chart-vertical-grid-lines,
+.dark-mode .chart-horizontal-grid-lines {
+    -fx-stroke: #4d4d4d;
+}
+
+.dark-mode .axis {
+    -fx-tick-label-fill: #ecf0f1;
+    -fx-tick-length: 10;
+}
+
+.dark-mode .axis-label {
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .chart-series-line {
+    -fx-stroke: #3498db;
+    -fx-stroke-width: 2px;
+}
+
+.dark-mode .chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.dark-mode .chart-legend-item {
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .chart-title {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+}
+
+/* Tab Pane improvements */
+.dark-mode .tab-pane {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark-mode .tab-pane .tab-header-area {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark-mode .tab-pane .tab {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .tab-pane .tab:selected {
+    -fx-background-color: #4d4d4d;
+}
+
+.dark-mode .tab-pane .tab .tab-label {
+    -fx-text-fill: #bdc3c7;
+}
+
+.dark-mode .tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #ecf0f1;
+}
+
+/* Layout improvements */
+.content-container {
+    -fx-padding: 10px;
+}
+
+.chart-container, .stats-container {
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+}
+
+/* Disable stop button initially */
+#stopButton:disabled {
+    -fx-opacity: 0.5;
+}
+
+/* View Selector */
+.view-selector {
+    -fx-padding: 5 0 0 0;
+    -fx-background-color: transparent;
+}
+
+.view-toggle-button {
+    -fx-padding: 10 20;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4 4 0 0;
+    -fx-cursor: hand;
+    -fx-min-width: 140px;
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2c3e50;
+    -fx-border-color: #dcdde1 #dcdde1 transparent #dcdde1;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 4 4 0 0;
+}
+
+.view-toggle-button:hover {
+    -fx-background-color: #e9ecef;
+}
+
+.view-toggle-button:selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-border-color: #2980b9 #2980b9 transparent #2980b9;
+}
+
+/* Dark mode toggle button styles */
+.dark-mode .view-toggle-button {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #bdc3c7;
+    -fx-border-color: #4d4d4d #4d4d4d transparent #4d4d4d;
+}
+
+.dark-mode .view-toggle-button:hover {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .view-toggle-button:selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-border-color: #2980b9 #2980b9 transparent #2980b9;
+}
+
+/* Content area styling to match toggle buttons */
+.content-container {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+}
+
+.dark-mode .content-container {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #4d4d4d;
+}
+
+/* Statistics View */
+.stats-view {
+    -fx-background-color: #f5f6fa;
+}
+
+.stats-header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 0 0 20 0;
+}
+
+.stats-grid {
+    -fx-background-color: transparent;
+}
+
+.stats-section {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #dcdde1;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.stats-section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Dark mode additions */
+.dark-mode .stats-view {
+    -fx-background-color: #1a1a1a;
+}
+
+.dark-mode .stats-header {
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .stats-section {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #4d4d4d;
+}
+
+.dark-mode .stats-section-title {
+    -fx-text-fill: #ecf0f1;
+}
+
+/* Dark mode specific chart styles */
+.dark-mode .packet-chart .chart-legend-item {
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-mode .packet-chart .chart-legend-item-symbol {
+    -fx-background-color: #3498db;
+}
+
+.dark-mode .packet-chart .chart-series-line {
+    -fx-stroke: #3498db;
+}
+
+.dark-mode .packet-chart .default-color0.chart-series-line {
+    -fx-stroke: #3498db;
+}
+
+.dark-mode .packet-chart .default-color0.chart-line-symbol {
+    -fx-background-color: #3498db, #2d2d2d;
+}
+
+/* Chart Tab Styling */
+.tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 120px;
+    -fx-tab-min-height: 30px;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 2 2 0 2;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 4 4 0 0;
+    -fx-border-color: #dcdde1 #dcdde1 transparent #dcdde1;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 4 4 0 0;
+    -fx-padding: 5 10;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #3498db;
+}
+
+.tab-pane .tab-label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #e9ecef;
+}
+
+.tab-pane .tab:selected:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Dark mode tab styles */
+.dark-mode .tab-pane .tab {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #4d4d4d #4d4d4d transparent #4d4d4d;
+}
+
+.dark-mode .tab-pane .tab:hover {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .tab-pane .tab-label {
+    -fx-text-fill: #bdc3c7;
+}
+
+.dark-mode .tab-pane .tab:selected {
+    -fx-background-color: #3498db;
+}
+
+.dark-mode .tab-pane .tab:selected:hover {
+    -fx-background-color: #2980b9;
+}
+
+.dark-mode .tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.dark-mode .tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.dark-mode .tab-pane .tab-content-area {
+    -fx-background-color: #2d2d2d;
+}
+
+/* Pie Chart Styles */
+.custom-tcp-slice {
+    -fx-pie-color: #e74c3c;
+}
+
+.custom-udp-slice {
+    -fx-pie-color: #f1c40f;
+}
+
+.custom-icmp-slice, .custom-icmpv6-slice {
+    -fx-pie-color: #2ecc71;
+}
+
+.custom-arp-slice {
+    -fx-pie-color: #9b59b6;
+}
+
+/* Default style for other protocols */
+.pie-chart-data {
+    -fx-pie-color: #95a5a6;
+}
+
+/* Legend Styles */
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: -fx-text-background-color;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 0;
+}
+
+.chart-legend-item .custom-tcp-slice .chart-legend-item-symbol {
+    -fx-background-color: #e74c3c;
+}
+
+.chart-legend-item .custom-udp-slice .chart-legend-item-symbol {
+    -fx-background-color: #f1c40f;
+}
+
+.chart-legend-item .custom-icmp-slice .chart-legend-item-symbol,
+.chart-legend-item .custom-icmpv6-slice .chart-legend-item-symbol {
+    -fx-background-color: #2ecc71;
+}
+
+.chart-legend-item .custom-arp-slice .chart-legend-item-symbol {
+    -fx-background-color: #9b59b6;
+}

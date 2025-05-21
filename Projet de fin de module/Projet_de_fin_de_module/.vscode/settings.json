@@ -1,0 +1,13 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+      "default": true
+    }
+  ],
+  
+  "js/ts.implicitProjectConfig.checkJs": false
+}

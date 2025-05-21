@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+        <Label text="Alertes de Sécurité" styleClass="header" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <TableView fx:id="alertTable">
+            <columns>
+                <TableColumn fx:id="colType" text="Type" />
+                <TableColumn fx:id="colDescription" text="Description" />
+                <TableColumn fx:id="colSeverity" text="Gravité" />
+                <TableColumn fx:id="colTimestamp" text="Horodatage" />
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

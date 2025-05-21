@@ -1,0 +1,10 @@
+com/projet5/controller/AlertController.class
+com/projet5/controller/DashboardController.class
+com/projet5/model/IntrusionAlert.class
+com/projet5/network/PacketSniffer.class
+com/projet5/model/PacketInfo.class
+com/projet5/TestLogger.class
+com/projet5/model/TrafficStats.class
+com/projet5/utils/ReportGenerator.class
+com/projet5/App.class
+com/projet5/detection/IntrusionDetector.class

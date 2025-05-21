@@ -1,0 +1,10 @@
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/App.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/TestLogger.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/controller/AlertController.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/controller/DashboardController.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/detection/IntrusionDetector.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/model/IntrusionAlert.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/model/PacketInfo.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/model/TrafficStats.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/network/PacketSniffer.java
+/Users/mac/Desktop/Projet de fin de module/Projet_de_fin_de_module/projet_5/src/main/java/com/projet5/utils/ReportGenerator.java
